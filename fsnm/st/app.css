@@ -1,53 +1,31 @@
 html {background:#E3E3E3;}
-html, body {margin: 0;padding: 0;position: relative;color: #464637;min-height: 100%;padding-bottom: 5rem;}
-:root{font-size: 1em;}
+html, body {color: #464637}
 
-h1, h4{text-align: center;margin: .5rem}
-h1{font-size: 2.5rem;}
-h4{font-size: 1rem; color: #9a938d}
+h4{color: #9a938d}
 a{color: #5F9EDF}
 
-ul {margin: 0;padding: 0;list-style: none;}
-input, textarea, select { border: 1px solid #999; border-radius: .5rem;}
-input{padding: .2rem 1rem;width: 69%}
-textarea{padding: .5rem;width: 88%;resize:none;}
-input:focus, textarea:focus, select:focus{outline: none;border-color: #5F9EDF}
+
+input{width: 69%}
+textarea{width: 88%;}
+input:focus, textarea:focus, select:focus{border-color: #5F9EDF}
 select{min-width: 15rem;padding: .2rem;}
 pre{height: 20rem; overflow: auto;margin: 0}
 em{color: #aaa}
-
-.container {margin: auto;min-width: 1100px; max-width: 1300px; position: relative; }
-.container, .MaT2 {margin-top: 2rem;}
-.PaAll1 {padding: 1rem}
-
-@media (min-width: 750px) and (max-width: 970px){
-	.container {max-width: 80%;min-width: inherit;}
-}
-
-.sortable-ghost {opacity: .2;}
 
 #foo .sortable-drag {background: #daf4ff;}
 
 
 .block__listL {max-width: 360px;}
-.block__list, .block__listL {padding: 1.2rem 0; margin-top: -8px; margin-left: 5px; background-color: #fff;}
-.block__list_words li {background-color: #fff; padding: .5rem 2.5rem;}
-.title {color: #fff; padding: 3px 10px; display: inline-block; position: relative; background-color: #a38a72; z-index: 1000;}
-	.tile__name {
-		cursor: move;
-		padding-bottom: 10px;
-		border-bottom: 1px solid #FF7373;
-	}
+.block__list, .block__listL {background-color: #fff;}
+.block__list_words li {background-color: #fff;}
+.title {color: #fff;background-color: #a38a72;}
+
 .Cmove li { cursor: move; }
 .Cmove i{float: right;cursor: pointer;}
 .Cmove i::after{content: "\2716";font: bold 1rem Sans-Serif;margin-left: .5rem;color: #5F9EDF;}
 .Cmove textarea{width: 100%;margin-top: .5rem}
 
-#nested ul li {
-	background-color: rgba(0,0,0,.05);
-}
-
-.Bnt {display: block; text-align: center;text-decoration: none; border-radius: .5rem; background: #a38a72; color: #fff;}
+.Bnt {display: block; background: #a38a72; color: #fff;}
 .Bnt:hover{background: #b9a18a}
 .T2.Bnt {display: inline-block; padding: 0 1rem;margin-left:1rem}
 
