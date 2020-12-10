@@ -1,0 +1,18 @@
+html {background:#eaeaea;}
+html, body {color:#967d65}
+
+h4{color: #a9968d}
+h3{color: #aaa}
+
+em{color: #aaa; margin: 0 .5rem}
+a {font-size: 1.5rem;text-decoration: none; color: #967d65}
+
+.block__list, .block__listL {background-color: #fff;}
+.block__list_words li {background-color: #fff;}
+.title {color: #fff;background-color: #abcee2;}
+
+.Bnt {display: block; background: #a38a72; color: #fff;}
+.Bnt:hover{background: #b9a18a}
+.T2.Bnt {display: inline-block; padding: 0 1rem;margin-left:1rem}
+
+.foot a {font-weight: bold;}
