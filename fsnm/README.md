@@ -2,6 +2,8 @@
 =========================
 Forum Style Novel Maker
 
+[![](https://img.shields.io/badge/website-tool.kumame.pw/fsnm-yellow.svg?style=for-the-badge&logo=appveyor)](https://tool.kumame.pw/fsnm)
+
 
 感觉没什么能说的，就是一个简单的编辑器。
 用了以下插件：
