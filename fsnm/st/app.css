@@ -1,9 +1,9 @@
 html {background:#E3E3E3;}
 html, body {color: #464637}
 
-h4{color: #9a938d}
+h4, h3{color: #9a938d}
 a{color: #5F9EDF}
-
+a {color: #7691ad;text-decoration: none;}
 
 input{width: 69%}
 textarea{width: 88%;}

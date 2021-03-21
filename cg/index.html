@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta property="og:image" content="app/logo.png"/>
+	<title>角色设定生成器 - Character Generator</title>
+	<meta name="keywords" content="角色设定生成器,Character Generator,Wland,Hello Wland,文澜德"/>
+	<meta name="description" content="Hello Wland 小工具：角色设定生成器"/>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5"/>
+	<link rel="icon" type="image/png" href="app/logo.png">
+	<link href="../all.css" rel="stylesheet" type="text/css"/>
+	<link href="app/style.css" rel="stylesheet" type="text/css"/>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="config.js"></script>
+	<script src="app/db.js"></script>
+</head>
+<body onload="load()">
+	<div class="container">
+		<h1>角色设定生成器</h1>
+		<h4>Character Generator</h4>
+	</div>
+	<div class="container" id="warning"></div>
+	<div class="container">
+		<div style="text-align: center;">
+			<iframe id="box1" src="app/box.html" scrolling="no"></iframe><iframe id="box2" src="app/box.html" style="margin-left: 5rem;" scrolling="no"></iframe>
+		</div>
+		<div class="MaT2">
+			<a id="Rseed" href="javascript:;" class="block__list_words Bnt MaT1">随机生成</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="cardbox"><div class="Cname"></div><div id="DNAout"></div></div>
+	</div>
+	<div class="container">
+		<div class="title">参数设置</div>
+		<ul class="block__list block__list_words">
+			<li>
+				角色名称 <input type="text" id="CharacterName" style="width: 6rem;" value="TA">，身高基数：MIN <input type="text" id="switch-heightMIN" value="110">，MAX <input type="text" id="switch-heightMAX" value="160">
+			</li>
+			<li>特征概率：
+				异瞳 <input type="text" id="switch-EYCL123" value="0.4">%
+				，胡须 <input type="text" id="switch-F_B_B" value="10">%
+				，面痣 <input type="text" id="switch-F_B_M" value="20">%
+				，面伤 <input type="text" id="switch-F_B_S" value="5">%
+				，躯体伤 <input type="text" id="switch-F_B_BS" value="5">%
+				，四肢残疾 <input type="text" id="switch-B_L_D" value="3">%
+			</li>
+			<li>
+				<input class="kaiguan" type="checkbox" id="switch-RACE" value="1" checked="checked"><label for="switch-RACE" style="margin-right: .5rem;">启用种族</label>
+				 混血概率 <input type="text" id="switch-hybrid" value="70">%
+			</li>
+		</ul>
+		<div class="title MaT2">使用贴士</div>
+		<ul class="block__list block__list_words">
+			<li>直接<b>点击坐标图</b>会根据选择的轴进行生成，或是点击<b>随机生成</b>按钮。</li>
+			<li>
+				身高基数是以<u>纬线</u> <em>(热带地区)</em> 作为参考，越往<u>寒冷地区</u> <em>(南北)</em> 越高。<br>
+				异色瞳概率会以<u>虚实坐标</u>递增计算，因此<u>不宜</u>设置过大。<br>
+				混血在<u>开启种族且高虚构</u>的情况下出现，只以人类为基底进行混血。
+			</li>
+		</ul>
+		<div class="MaT2"></div>
+		<ul class="block__list block__list_words">
+			<li>角色设定生成器 由 <a href="http://www.kumame.pw" target="_blank">熊豆(kumame)</a> 编写。</li>
+			<li>离线版本及开源代码下载：<a href="https://github.com/kumame/Tools/tree/Character-Generator">GitHub</a></li>
+		</ul>
+	</div>
+	<div class="MaT2"></div>
+	<div id="info-f"></div>
+	<script src="../info.js"></script>
+</body>
+</html>

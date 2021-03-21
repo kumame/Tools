@@ -5,7 +5,9 @@ h4{color: #a9968d}
 h3{color: #aaa}
 
 em{color: #aaa; margin: 0 .5rem}
-a {font-size: 1.5rem;text-decoration: none; color: #967d65}
+a {text-decoration: none;color: #6a97b1}
+
+li a {font-size: 1.5rem; color: #967d65}
 
 .block__list, .block__listL {background-color: #fff;}
 .block__list_words li {background-color: #fff;}

@@ -12,7 +12,7 @@
 	<link href="all.css" rel="stylesheet" type="text/css"/>
 	<link href="index.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
+<body onload="load()">
 	<div class="container">
 		<h1>Kumame Tools</h1>
 		<h4>大概就是一些小玩具</h4>
@@ -22,11 +22,17 @@
 	<div class="container">
 		<div class="title">文本编辑类工具</div>
 		<ul class="block__listL block__list_words">
-			<li><a href="fsnm/index.html">论坛风格小说编辑器</a><em>Forum Style Novel Maker</em></li>
+			<li><a href="fsnm">论坛风格小说编辑器</a><em>Forum Style Novel Maker</em></li>
 		</ul>
 	</div>
-
+	<div class="container">
+		<div class="title">辅助创作类工具</div>
+		<ul class="block__listL block__list_words">
+			<li><a href="cg">角色设定生成器</a><em>Character Generator</em></li>
+		</ul>
+	</div>
 	<div class="MaT2"></div>
-	<h3>Website create in 2020/12/10 , Maintainer 熊豆(kumame)</h3>
+	<div id="info-f"></div>
+	<script src="info.js"></script>
 </body>
 </html>
