@@ -1,0 +1,61 @@
+html, body {margin: 0;padding: 0;position: relative;min-height: 100%;padding-bottom: 5rem;color: #464637}
+:root{font-size: 1em;}
+html {background:#3c485e;}
+h1, h3, h4{text-align: center;margin: .5rem}
+h1{font-size: 2.5rem;color: #e9e8d4}
+h3{font-size: .8rem;}
+h4{font-size: 1rem;}
+h4, h3{color: #7887a2}
+h3 a {color: #b9b8a5;text-decoration: none;}
+a {color: #5F9EDF}
+p {margin: 0;text-indent: 2rem;}
+
+ul {margin: 0;padding: 0;list-style: none;}
+input{width: 1.7rem; font-size: 1rem; border: 0; border-bottom: 1px solid #999; border-radius: 0; padding: 0 .5rem;color: #759271; font-weight: bold;}
+input:focus{outline: none;}
+em {color: #aaa;}
+em, #DNAout em, #DNAout i{font-style: inherit;}
+iframe {border: 0;background-repeat: no-repeat;border-radius: .5em;background-color: hsl(219 38% 56%)}
+#warning{background: #ffc239;text-align: center;padding: .5rem 0;border-radius: .5rem;}
+.MaT1{margin-top: 1rem;}
+.PaAll1 {padding: 1rem}
+.container {margin: auto;width:600px; position: relative; }
+.container, .MaT2 {margin-top: 2rem;}
+.block__list{padding: 1.2rem 0; margin-top: -8px; margin-left: 5px;}
+.block__list_words li {padding: .5rem 2.5rem;}
+.block__list_words li, .block__list {background-color: #fff;}
+.title {padding: 3px 10px; display: inline-block; position: relative; z-index: 1000;background-color: #a38a72;}
+.title, #DNAout u, .BGtype1:before, .BGtype2:before, .Bnt, .kaiguan:checked + label{color:#fff;}
+.cardbox, .card{padding: 1rem;}
+.cardbox{background:#fff;border-radius: .5rem;}
+.Cname{position: absolute; background: #fff; min-width: 3rem; border-radius: 0 .3rem .3rem 0; top: 2rem; left:0; padding:.2rem 1rem .2rem 1.5rem;z-index: 9;}
+.card{background-color:#85b1ad;color:#e2f9f7;line-height: 1.6rem;}
+.cardbox, .card{position: relative; overflow: hidden;}
+.P-T4{padding-top:4rem}
+#DNAout span{background: #fff9c4;margin-right: .3rem;}
+#DNAout u, #DNAout em, #DNAout i{margin: 0 .2rem;}
+#DNAout u{text-decoration: none; border-bottom: 1px solid #5e807c;font-weight: bold;}
+#DNAout em, #DNAout i{color: inherit;}
+#DNAout em{background: #6ba29d;}
+#DNAout i{background: #91c1bd;}
+.Cname:first-letter, .kaiguan + label::before, .kaiguan:checked + label::before{font-size: 1.5rem;}
+.BGtype1:before, .BGtype2:before {content: '\2747';position: absolute;opacity: 0.3;}
+.BGtype1:before {font-size: 5rem;left: -11px; top: 13px;transform: rotate( 65deg ); }
+.BGtype2:before {font-size: 7rem; right: -21px; top: 7px;transform: rotate( 31deg );}
+
+.Bnt {display: block; background: #6d83ad;padding: 1rem 2rem;text-align: center;text-decoration: none; border-radius: .5rem;}
+.Bnt:hover{background: #7d93bd}
+.T2.Bnt {display: inline-block; padding: 0 1rem;margin-left:1rem}
+
+input.kaiguan, #warning{display: none;}
+.kaiguan:checked + label {background: #84a980;}
+.kaiguan + label,input:disabled {background: #e2e2e2;color: #929292}
+.kaiguan + label, .kaiguan:checked + label { padding: 0.1rem .5rem; border-radius: 1rem;cursor: pointer;}
+.kaiguan + label::before, .kaiguan:checked + label::before {content: "\25CF"; margin-right: .2rem;position: relative;top: .1rem;}
+
+@media (min-width: 750px) and (max-width: 970px){
+	.container {width: 80%;}
+    .card {line-height: 2.6rem;}
+    #DNAout u, #DNAout em, #DNAout i{margin: 0 .3rem;}
+    #DNAout span{margin-right: .4rem;}
+}
