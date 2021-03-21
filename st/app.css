@@ -1,0 +1,53 @@
+html, body {margin: 0;padding: 0;position: relative;min-height: 100%;padding-bottom: 5rem;color: #464637}
+:root{font-size: 1em;}
+html {background:#E3E3E3;}
+
+h1, h3, h4{text-align: center;margin: .5rem}
+h1{font-size: 2.5rem;}
+h3{font-size: .8rem;}
+h4{font-size: 1rem;}
+h4, h3{color: #9a938d}
+a{color: #5F9EDF}
+a {color: #7691ad;text-decoration: none;}
+
+ul {margin: 0;padding: 0;list-style: none;}
+input, textarea, select { border: 1px solid #999; border-radius: .5rem;}
+input{padding: .2rem 1rem;}
+textarea{padding: .5rem;resize:none;}
+input:focus, textarea:focus, select:focus{outline: none;}
+
+input{width: 69%}
+textarea{width: 88%;}
+input:focus, textarea:focus, select:focus{border-color: #5F9EDF}
+select{min-width: 15rem;padding: .2rem;}
+pre{height: 20rem; overflow: auto;margin: 0}
+em{color: #aaa}
+
+#foo .sortable-drag {background: #daf4ff;}
+
+.container {margin: auto;min-width: 1100px; max-width: 1300px; position: relative; }
+.container, .MaT2 {margin-top: 2rem;}
+.block__listL {max-width: 360px;}
+.block__list, .block__listL, .block__list_words li {background-color: #fff;}
+.title {color: #fff;background-color: #a38a72;}
+
+.Cmove li { cursor: move; }
+.Cmove i{float: right;cursor: pointer;}
+.Cmove i::after{content: "\2716";font: bold 1rem Sans-Serif;margin-left: .5rem;color: #5F9EDF;}
+.Cmove textarea{width: 100%;margin-top: .5rem}
+
+.Bnt {display: block; background: #a38a72; color: #fff;}
+.Bnt:hover{background: #b9a18a}
+.T2.Bnt {display: inline-block; padding: 0 1rem;margin-left:1rem}
+.PaAll1 {padding: 1rem}
+#echo {float: left;color: #5F9EDF}
+.foot a {font-weight: bold;}
+
+@media (min-width: 750px) and (max-width: 970px){
+	.container {max-width: 80%;min-width: inherit;}
+}
+
+.block__list, .block__listL {padding: 1.2rem 0; margin-top: -8px; margin-left: 5px;}
+.block__list_words li {padding: .5rem 2.5rem;}
+.title {padding: 3px 10px; display: inline-block; position: relative; z-index: 1000;}
+.Bnt {text-align: center;text-decoration: none; border-radius: .5rem;}

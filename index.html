@@ -3,30 +3,87 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta property="og:image" content="kumame.png"/>
-	<title>Kumame ToolBox</title>
-	<meta name="keywords" content="生成器"/>
-	<meta name="description" content="生成器"/>
+	<meta property="og:image" content="logo.png"/>
+	<title>论坛风格小说编辑器 - Forum Style Novel Maker</title>
+	<meta name="keywords" content="论坛风格小说编辑器,Forum Style Novel Maker,Wland,Hello Wland,文澜德"/>
+	<meta name="description" content="Hello Wland 小工具：论坛风格小说编辑器"/>
 	<meta name="viewport" content="width=device-width, initial-scale=0.5"/>
-	<link rel="icon" type="image/png" href="kumame.png">
-	<link href="all.css" rel="stylesheet" type="text/css"/>
-	<link href="index.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" type="image/png" href="logo.png">
+	<link href="st/app.css" rel="stylesheet" type="text/css"/>
+	<script src="st/jquery.min.js"></script>
 </head>
-<body>
+<body onload="load()">
 	<div class="container">
-		<h1>Kumame Tools</h1>
-		<h4>大概就是一些小玩具</h4>
+		<h1>论坛风格小说编辑器</h1>
+		<h4>Forum Style Novel Maker</h4>
 		<div class="PaAll1"></div>
 	</div>
-
 	<div class="container">
-		<div class="title">文本编辑类工具</div>
-		<ul class="block__listL block__list_words">
-			<li><a href="fsnm/index.html">论坛风格小说编辑器</a><em>Forum Style Novel Maker</em></li>
-		</ul>
+		<div data-force="30" class="layer" style="left: 14.5%; top: 0; width: 30%">
+			<div class="layer title">楼层前缀&后缀设置</div>
+			<ul class="block__listL block__list_words">
+				<li>前缀 <input type="text" id="prefix" value="#"></li>
+				<li>后缀 <input type="text" id="suffix" value="发表于 xxxx-xx-xx xx:xx:xx"></li>
+			</ul>
+			
+			<div class="layer title MaT2">角色名称预设</div>
+			<ul class="block__listL block__list_words">
+				<li><textarea id="names" rows="3">角色A，角色B，角色C</textarea></li>
+				<li>分割符使用<b>中英文逗号</b>或是<b>空格</b>皆可</li>
+			</ul>
+			<div class="MaT2"></div>
+			<a id="save" href="javascript:;" class="block__listL block__list_words Bnt">保存<span id="upsave" style="margin-left: .5rem;">Ctrl+s / 1min auto</span></a>
+		</div>
+		<div data-force="30" class="layer" style="left: 33%; top: 0; width: 67%;position: absolute;">
+			<div class="layer title">全文输出</div>
+			<ul class="block__list block__list_words" style="height: 23.3rem;">
+				<li>
+					<pre id="outdetail">暂无输出内容，请添加后点击 载入更新</pre>
+				</li>
+				<li style="text-align: right">
+					<div id="echo"></div>
+					输出：
+					<a id="relod" href="javascript:;" class="block__list_words Bnt T2" style="margin-left:0;">纯文本</a>
+					<a id="bbcode" href="javascript:;" class="block__list_words Bnt T2">BBCode</a>
+					<a id="html" href="javascript:;" class="block__list_words Bnt T2">HTML</a>
+					<a id="copy" data-clipboard-action="copy" data-clipboard-target="#outdetail" href="javascript:;" class="block__list_words Bnt T2">复制文本</a>
+				</li>
+			</ul>
+		</div>
 	</div>
 
+	<!-- Connected lists -->
+	<div class="container">
+		<div data-force="30" class="layer">
+			<div class="layer title">楼层文本编辑（<span id="layernum">0</span>）</div>
+			<ul id="foo" class="block__list block__list_words Cmove"></ul>
+		</div>
+		<div data-force="30" class="MaT2">
+			<a id="add" href="javascript:;" class="block__list block__list_words Bnt">添加楼层</a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div data-force="30" class="layer">
+			<div class="layer title">使用贴士</div>
+			<ul class="block__list block__list_words">
+				<li>摁住楼层空白处可以进行拖动排序。<br>
+					如果在楼层添加途中 <b>修改</b> 或 <b>增加</b> 名称预设，当前已添加的楼层选项虽然不会变动，但是不影响最终的全文输出。<br>
+					BBCode适用于Wland或是采用该系语言编辑器的平台。HTML适用于绝大多数富文本编辑器，但是否生效主要看平台有没有开放对应代码。
+				</li>
+			</ul>
+		</div>
+		<div class="MaT2"></div>
+		<ul class="block__list block__list_words">
+			<li>论坛风格小说编辑器 由 <a href="http://www.kumame.pw" target="_blank">熊豆(kumame)</a> 编写<em>（2020/12/10）</em></li>
+			<li>离线版本下载：<a href="https://github.com/kumame/Tools/tree/Forum-Style-Novel-Maker">源代码</a><em>(GitHub)</em>、<a href="st/Forum Style Novel Maker.xlsx" download="st/Forum Style Novel Maker.xlsx">Excel</a><em>(2016以上推荐)</em>、</li>
+		</ul>
+	</div>
 	<div class="MaT2"></div>
-	<h3>Website create in 2020/12/10 , Maintainer 熊豆(kumame)</h3>
+	<div id="info-f"></div>
+	<script src="st/clipboard.min.js"></script>
+	<script src="st/Sortable.js"></script>
+	<script src="st/app.js"></script>
+	<script src="../info.js"></script>
 </body>
 </html>
