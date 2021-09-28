@@ -71,13 +71,13 @@
 })();
 
 //加载
-function load(){
+$("document").ready(function(){
 	if(localStorage.prefix) $("#prefix").val(window.localStorage.prefix);
 	if(localStorage.suffix) $("#suffix").val(window.localStorage.suffix);
 	if(localStorage.names) $("#names").val(window.localStorage.names);
 	if(localStorage.layernum) $("#layernum").text(localStorage.layernum);
 	if(localStorage.layerbox) $("#foo").html(localStorage.layerbox);
-}
+});
 
 //自动保存
 var autosave = window.setInterval(function(){$('#save').click()},60000);
