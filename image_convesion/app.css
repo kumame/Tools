@@ -1,0 +1,12 @@
+html {background:#222222;}
+html, body {color: #ffffff}
+h1 { color: #ef9930;}
+h4, h3{color: #9a938d}
+a {color: #28c6da;text-decoration: none;}
+.container {text-align: center;}
+em{color: #aaa}
+.block__list, .block__listL {background-color: #3b3b3b;border-radius: 0.5rem;}
+.block__list_words li {background-color: #3b3b3b;text-align: left !important;}
+.block__list_words li p {margin: 0;margin-left: 1rem;}
+.title {color: #222;background-color: #be7d18;border-radius: 1rem;padding: 0.3rem 1rem;top:0.5rem;font-weight: bold;}
+.tips {color: #c58521 !important;}
